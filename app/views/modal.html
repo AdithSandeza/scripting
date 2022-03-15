@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+  <script type="module" src="https://unpkg.com/@freshworks/crayons/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@freshworks/crayons/dist/crayons/crayons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="https://static.freshdev.io/fdk/2.0/assets/freshdesk.css"/>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script> -->
+  <script src="https://unpkg.com/vue@next" defer></script>
+  <script src="../scripts/app.js"></script>
+  <script src="https://unpkg.com/element-ui"></script>
+  <script src="https://unpkg.com/element-ui/lib/umd/locale/en.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/plugin/relativeTime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+ <script src="../scripts/app.js"></script>
+
+</head>
+
+<body>
+  <div id="app" class="input-group md-form form-sm form-1 pl-0">
+    <div class="input-group-prepend">
+      <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+          aria-hidden="true"></i></span>
+    </div>
+    <input class="form-control my-0 py-1" v-model="search" type="text" placeholder="Search" aria-label="Search">
+    <button  class="btn btn-outline-warning btn-rounded btn-sm my-0 btn-search" @click="searchTheDoc()" type="submit">Search</button>
+  </div>
+
+</body>
+
+</html>

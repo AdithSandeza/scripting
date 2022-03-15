@@ -1,0 +1,24 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshworks_crm": {
+      "location": {
+       
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        },
+        "contact_entity_menu": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+       
+      }
+    }
+  },
+  "whitelisted-domains": ["https://en5dm918ae.execute-api.us-east-1.amazonaws.com","https://jlontm3tlj.execute-api.us-east-1.amazonaws.com","https://nyra-script-bucket.s3.amazonaws.com"],
+  "engines": {
+    "node": "12.22.0",
+    "fdk": "7.1.0"
+  }
+}
